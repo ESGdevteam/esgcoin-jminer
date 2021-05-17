@@ -1,9 +1,9 @@
-# burstcoin-jminer
-GPU assisted Proof of Capacity (PoC) Miner for Burstcoin (BURST)
+# amazonascoin-jminer
+GPU assisted Proof of Capacity (PoC) Miner for Amazonascoin (AMZ)
 
 1. edit 'jminer.properties' with text editor to configure miner
 2. ensure java8 (64bit) and openCL driver/sdk is installed (java9 will not work)
-3. execute 'java -jar -d64 -XX:+UseG1GC burstcoin-jminer-0.6.x-RELEASE.jar' or run the *.bat/*.sh file
+3. execute 'java -jar -d64 -XX:+UseG1GC amazonascoin-jminer-0.6.x-RELEASE.jar' or run the *.bat/*.sh file
 
 > '-d64' to ensure 64bit java (remove for 32bit)
 > '-XX:+UseG1GC' to free memory after round finished.
@@ -94,7 +94,7 @@ the miner will calculate the targetDeadline dynamic on poolMining.
 
 
 ## Pool-Mining
-Ensure you already setup reward assignment http://localhost:8125/rewardassignment.html
+Ensure you already setup reward assignment http://localhost:8132/rewardassignment.html
 
 ### numericAccountId (required for pool)
 first number in all plot-files
@@ -103,17 +103,17 @@ first number in all plot-files
 
 
 ### poolServer (required for pool)
-format is inclusive protocol and port e.g. 'http://pool.com:8125'
+format is inclusive protocol and port e.g. 'http://pool.com:8132'
 
     poolServer=http://pool.com
 
 ### walletServer (optional)
 define local or online wallet, to receive and show last winner!
 if empty, winner feature will be just disabled.
-format is inclusive protocol and port e.g. 'http://localhost:8125'
-online use e.g. 'https://wallet.burst-team.us:8125'
+format is inclusive protocol and port e.g. 'http://localhost:8132'
+online use e.g. 'https://wallet.amazonasbit.com:8132'
 
-    walletServer=https://wallet.burst-team.us:8125
+    walletServer=https://wallet.amazonasbit.com:8132
 
 ### winnerRetriesOnAsync (default:4)
 number of retries to get winner from walletServer
@@ -128,16 +128,16 @@ time to wait until next retry to get winner from walletServer
 
 ## Solo-mining
 
-### soloServer (default:http://localhost:8125)
-**WARN!** soloServer should be http://localhost:8125 or http://127.0.0.1:8125
+### soloServer (default:http://localhost:8132)
+**WARN!** soloServer should be http://localhost:8132 or http://127.0.0.1:8132
 Solo means you send your PASS on commit results!
 
 **DO NOT** try to use a online wallet or pool as Server!
 
-    soloServer=http://127.0.0.1:8125
+    soloServer=http://127.0.0.1:8132
 
 ### passPhrase (required for solo)
-secretPhrase/password of solo mining burst-account
+secretPhrase/password of solo mining amz-account
 
     passPhrase=xxxxxxxxxxxxxx
 
@@ -279,8 +279,4 @@ For example, if you mine on 4 drives (plotPaths), you can reduce the memory usag
 by setting 'readerThreads=2', this will reduce mining speed but save memory.
 
     readerThreads=10
-    
-    
-
-
-
+  
