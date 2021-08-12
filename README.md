@@ -1,9 +1,9 @@
-# amazonascoin-jminer
-GPU assisted Proof of Capacity (PoC) Miner for Amazonascoin (AMZ)
+# esgcoin-jminer
+GPU assisted Proof of Capacity (PoC) Miner for Esgcoin (ESG)
 
 1. edit 'jminer.properties' with text editor to configure miner
 2. ensure java8 (64bit) and openCL driver/sdk is installed (java9 will not work)
-3. execute 'java -jar -d64 -XX:+UseG1GC amazonascoin-jminer-0.6.x-RELEASE.jar' or run the *.bat/*.sh file
+3. execute 'java -jar -d64 -XX:+UseG1GC esgcoin-jminer-0.6.x-RELEASE.jar' or run the *.bat/*.sh file
 
 > '-d64' to ensure 64bit java (remove for 32bit)
 > '-XX:+UseG1GC' to free memory after round finished.
@@ -137,7 +137,7 @@ Solo means you send your PASS on commit results!
     soloServer=http://127.0.0.1:8132
 
 ### passPhrase (required for solo)
-secretPhrase/password of solo mining amz-account
+secretPhrase/password of solo mining esg-account
 
     passPhrase=xxxxxxxxxxxxxx
 

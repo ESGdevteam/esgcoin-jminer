@@ -2,14 +2,14 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0">
   <modelVersion>4.0.0</modelVersion>
 
-  <groupId>burstcoin</groupId>
-  <artifactId>burstcoin-jminer</artifactId>
+  <groupId>esgcoin</groupId>
+  <artifactId>esgcoin-jminer</artifactId>
   <version>0.6.0-RELEASE</version>
   <packaging>jar</packaging>
 
-  <name>burstcoin-jminer</name>
+  <name>esgcoin-jminer</name>
 
-  <description>Burstcoin (BURST) - GPU assisted PoC-Miner</description>
+  <description>Esgcoin (ESG) - GPU assisted PoC-Miner</description>
 
   <parent>
     <groupId>org.springframework.boot</groupId>
@@ -20,7 +20,7 @@
 
   <properties>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-    <start-class>burstcoin.jminer.JMinerApplication</start-class>
+    <start-class>esgcoin.jminer.JMinerApplication</start-class>
     <java.version>1.8</java.version>
     <jocl-blast.version>1.5.0</jocl-blast.version>
     <saphir-hash.version>3.0.5</saphir-hash.version>
@@ -85,7 +85,7 @@
       <resource>
         <directory>src/main/java</directory>
         <includes>
-          <include>burstcoin/jminer/core/**/*.cl</include>
+          <include>esgcoin/jminer/core/**/*.cl</include>
         </includes>
       </resource>
       <resource>
